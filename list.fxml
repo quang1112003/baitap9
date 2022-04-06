@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx.ListController">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="409.0" prefWidth="596.0">
+         <children>
+            <Text layoutX="252.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Number List" textAlignment="CENTER" wrappingWidth="90.423828125">
+               <font>
+                  <Font size="24.0" />
+               </font></Text>
+            <Button layoutX="383.0" layoutY="19.0" mnemonicParsing="false" onAction="#formScreen" prefHeight="25.0" prefWidth="169.0" text="Add phone number" />
+            <TableView fx:id="tbView" layoutX="14.0" layoutY="48.0" prefHeight="347.0" prefWidth="561.0">
+              <columns>
+                <TableColumn fx:id="cName" minWidth="0.0" prefWidth="167.0" text="Name" />
+                <TableColumn fx:id="cNumber" minWidth="0.0" prefWidth="139.0" text="Number" />
+                  <TableColumn fx:id="cEdit" minWidth="0.0" prefWidth="141.0" text="Edit" />
+                  <TableColumn fx:id="cDelete" minWidth="0.0" prefWidth="113.0" text="Delete" />
+                 
+              </columns>
+            </TableView>
+            <TextField fx:id="txtSearch" layoutX="26.0" layoutY="19.0" prefHeight="13.0" prefWidth="149.0" promptText="Search by name or phone number" />
+            <Button layoutX="168.0" layoutY="19.0" mnemonicParsing="false" onAction="#search" text="Search" />
+         </children></AnchorPane>
+  </content>
+</ScrollPane>

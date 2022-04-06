@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx.DemoController">
+   <children>
+      <TextField fx:id="fullName" layoutX="49.0" layoutY="105.0" prefHeight="46.0" prefWidth="330.0" promptText="Fullname" />
+      <TextField fx:id="number" layoutX="49.0" layoutY="188.0" prefHeight="46.0" prefWidth="330.0" promptText="Number" />
+      <Button alignment="CENTER" layoutX="45.0" layoutY="432.0" mnemonicParsing="false" onAction="#submit" prefHeight="46.0" prefWidth="336.0" text="Submit">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Text fx:id="result" layoutX="481.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Infomation" wrappingWidth="282.21630859375">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="errMsg" fill="#a41616" layoutX="48.0" layoutY="437.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Error...." visible="false" />
+   </children>
+</Pane>
